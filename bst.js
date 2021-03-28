@@ -93,13 +93,20 @@ class Tree {
 };
 
 const tree = new Tree();
-
+tree.push(11);
+tree.push(10);
+tree.push(12);
+tree.push(32);
+tree.push(13);
+tree.push(0);
+tree.push(17);
+tree.push(43);
+tree.push(8);
+tree.push(10);
 console.log(util.inspect(tree, false, null));
-
-tree.print();
-console.log(tree.find(3));
+console.log(tree.find(53));
 console.log(tree.find(7));
-console.log(tree.find(9));
-console.log(tree.find(1));
-console.log(tree.find(8));
+console.log(tree.find(32));
+console.log(tree.find(17));
+console.log(tree.find(0));
 
